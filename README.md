@@ -134,18 +134,6 @@ Reduces overestimation bias by:
 
 Results in more stable training.
 
-------------------------------------------------------------------------
-
-## ⚡ GPU Acceleration
-
-Training supports:
-
--   CUDA (NVIDIA GPUs)
--   Apple MPS
--   CPU fallback
--   AMP mixed precision
--   torch.compile (PyTorch 2.0+)
--   Pinned replay buffer
 
 ------------------------------------------------------------------------
 
