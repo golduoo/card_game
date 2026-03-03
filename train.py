@@ -1,12 +1,5 @@
 """
 train.py
-统一训练入口，支持 linear / dqn / double_dqn 三种算法。
-GPU 加速版本：
-  - 自动检测 CUDA / MPS / CPU
-  - --device 参数强制指定设备
-  - Replay Buffer 使用 pin_memory 加速 CPU->GPU 传输
-  - AMP 混合精度（CUDA 自动开启，约提速 30%）
-  - 支持 torch.compile（PyTorch 2.0+ 进一步提速）
 
 使用方法：
     python train.py --algo dqn    --episodes 8000
@@ -420,4 +413,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
