@@ -125,16 +125,3 @@ visualization
 
 ------------------------------------------------------------------------
 
-## 📂 Structure
-
-    env.py
-    train.py
-    play_agent.py
-    agent.py
-    game_config.py
-    play_human.py
-    logs
-
-------------------------------------------------------------------------
-
-Developed for CDS524 Reinforcement Learning Assignment.
