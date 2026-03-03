@@ -139,7 +139,7 @@ class ReplayBuffer:
 # ==================== DQN Agent ====================
 
 class DQNAgent:
-    """标准 DQN，使用经验回放和目标网络。"""
+    """使用经验回放和目标网络。"""
 
     def __init__(self, cfg: DQNConfig):
         self.cfg = cfg
@@ -222,8 +222,7 @@ class DQNAgent:
 
 class DoubleDQNAgent(DQNAgent):
     """
-    Double DQN：动作选择用 policy_net，Q 值估计用 target_net，
-    有效抑制 Q 值的正向偏差。
+    Double DQN：动作选择用 policy_net，Q 值估计用 target_net。
     """
 
     def learn(self) -> Optional[float]:
@@ -257,4 +256,5 @@ class DoubleDQNAgent(DQNAgent):
 
         loss_val = loss.item()
         self.loss_history.append(loss_val)
+
         return loss_val
